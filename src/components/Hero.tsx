@@ -72,7 +72,7 @@ const Hero = () => {
             View My Work
           </button>
           <a
-            href="/vyshnavi.ncv.pdf"
+            href="/vyshnavi_ncv.pdf"
             download="Vyshnavi_N_CV.pdf"
             className="flex items-center justify-center gap-2 px-8 py-4 bg-white/5 border-2 border-pink-300/60 text-pink-100 font-semibold rounded-lg hover:bg-pink-200 hover:text-black transition-all hover:scale-105"
           >
