@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    background:
+      radial-gradient(circle at 12% 8%, rgba(251, 113, 133, 0.34), transparent 35%),
+      radial-gradient(circle at 86% 20%, rgba(244, 114, 182, 0.2), transparent 40%),
+      #17111d;
+    color: #f5f3ff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+  }
+
+  ::selection {
+    background: rgba(244, 114, 182, 0.35);
+    color: #ffffff;
+  }
+}
+
+@layer utilities {
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold mb-12;
+  }
+
+  .glass-card {
+    @apply bg-[#241b2c]/80 border border-pink-300/20 rounded-2xl backdrop-blur-sm transition-all duration-300;
+    box-shadow: 0 12px 26px rgba(20, 12, 28, 0.55);
+  }
+
+  .glass-card:hover {
+    @apply bg-[#2d2136]/90 border-pink-300/35;
+    box-shadow: 0 16px 32px rgba(12, 8, 18, 0.65);
+  }
+
+  .glass-pill {
+    @apply px-3 py-1 rounded-full text-sm bg-pink-500/15 border border-pink-300/35 text-pink-100;
+  }
+
+  .section-shell {
+    @apply relative z-10 px-6 py-24;
+  }
+
+  .section-alt {
+    @apply bg-[#1c1423];
+  }
+
+  .purple-link {
+    @apply text-pink-300 hover:text-pink-200 underline underline-offset-4 transition-colors;
+  }
+
+  .muted-text {
+    @apply text-zinc-300;
+  }
+
+  .band-hero {
+    @apply bg-[#2a1f2f];
+  }
+
+  .band-dark {
+    @apply bg-[#17111d];
+  }
+
+  .band-mid {
+    @apply bg-[#241b2c];
+  }
+
+  .band-light {
+    @apply bg-[#7e6a8f];
+  }
+
+  .band-rose {
+    @apply bg-[#c98a9a];
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out;
+  }
+
+  .animate-fade-in-delay {
+    animation: fadeIn 1s ease-out 0.3s both;
+  }
+
+  .animate-fade-in-delay-2 {
+    animation: fadeIn 1s ease-out 0.6s both;
+  }
+
+  .animate-fade-in-delay-3 {
+    animation: fadeIn 1s ease-out 0.9s both;
+  }
+
+  .animate-on-scroll {
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  }
+
+  .animate-on-scroll.visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
