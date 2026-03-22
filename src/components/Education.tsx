@@ -7,7 +7,7 @@ const Education = () => {
       degree: 'Bachelor of Technology in Computer Science and Engineering',
       location: 'Punjab, India',
       period: 'August 2023 - Present',
-      grade: 'CGPA: 5.95',
+      grade: '',
     },
     {
       institution: 'Government Girls Higher Secondary School',
